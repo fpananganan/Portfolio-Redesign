@@ -2,8 +2,13 @@
 
 
 /* Custom Styles */
+.btn-primary btn-lg {
+  border-radius: 8px;
+}
 
 
+
+/* Blinking Cursur */
 .blinking-cursor {
     font-weight: 100;
     font-size: 30px;
