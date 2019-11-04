@@ -1,0 +1,84 @@
+/* Master Styles Palette */
+$color-primary: #3046C5;
+$color-secondary: #5637dd;
+$color-pale: #CEC8FF;
+$color-mid: #901CAD;
+$color-dark: #60106b;
+$color-transparent-black: rgba(0, 0, 0, 0.5);
+
+/* Core Styles */
+.btn-primary btn-lg {
+    border-radius: 8px;
+  }
+  
+  #modalContactForm .modal-header {
+    background-color: #0275d8; 
+    color: white; 
+  }
+  
+  .close {
+    color: white; 
+  }
+  
+  .social-icons {
+    font-size: 46px; 
+  }
+  
+  
+  /* Blinking Cursur */
+  .blinking-cursor {
+      font-weight: 100;
+      font-size: 30px;
+      color: #2E3D48;
+      -webkit-animation: 1s blink step-end infinite;
+      -moz-animation: 1s blink step-end infinite;
+      -ms-animation: 1s blink step-end infinite;
+      -o-animation: 1s blink step-end infinite;
+      animation: 1s blink step-end infinite;
+    }
+    
+    @keyframes "blink" {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: #0275d8;
+      }
+    }
+    
+    @-moz-keyframes blink {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: #0275d8;
+      }
+    }
+    
+    @-webkit-keyframes "blink" {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: #0275d8;
+      }
+    }
+    
+    @-ms-keyframes "blink" {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: #0275d8;
+      }
+    }
+    
+    @-o-keyframes "blink" {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: #0275d8;
+      }
+    }
+  
