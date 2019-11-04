@@ -6,6 +6,18 @@
   border-radius: 8px;
 }
 
+#modalContactForm .modal-header {
+  background-color: #0275d8; 
+  color: white; 
+}
+
+.close {
+  color: white; 
+}
+
+.social-icons {
+  font-size: 46px; 
+}
 
 
 /* Blinking Cursur */

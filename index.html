@@ -11,8 +11,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
-    <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" /> -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>UX Portfolio</title>
@@ -22,7 +22,7 @@
     <section class="jumbotron-fluid"> 
       <header class="header">
           <!-- Nav Bar -->
-          <nav class="navbar sticky-top navbar-expand-lg p-3 px-md-4 mb-3 navbar-light bg-white">
+          <nav class="navbar navbar-expand-sm p-3 px-md-4 mb-3 navbar-light text-center bg-white">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="images/logo-mark.svg" alt="picture of brand logo" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContet" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,26 +38,69 @@
                         <a href="#" class="nav-link"> <strong> Projects </strong> </a>
                       </li>
                       <li class="nav-item">
-                        <a href="#" class="nav-link"> <strong> Contact </strong> </a>
+                        <a href="#contactModal" data-toggle="modal" data-target="#modalContactForm" class="nav-link"> <strong> Contact </strong> </a>
                       </li>
                     </ul> 
                 </div>
             </div>
         </nav>
+        <!-- Contact Modal -->
+        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h3 class="modal-title w-100 font-weight-bold"> Send Me A Message </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                  <span aria-hidden="true"> &times; </span>
+                </button>
+              </div>
+              <div class="modal-body mx-3">
+                <div class="md-form mb-5 text-secondary">
+                  <i class="fa fa-user prefix"></i>
+                  <label data-error="wrong" data-success="right" for="form34"> What's Your Name? </label>
+                  <input type="text" id="form34" class="form-control validate">
+                </div>
+
+                <div class="md-form mb-5 text-secondary">
+                  <i class="fa fa-envelope prefix"></i>
+                  <label data-error="wrong" data-success="right" for="form29"> Email Address </label>
+                  <input type="email" id="form29" class="form-control validate">
+                </div>
+
+                <div class="md-form mb-5 text-secondary">
+                  <i class="fa fa-tag prefix"></i>
+                  <label data-error="wrong" data-success="right" for="form32"> Subject Title </label>
+                  <input type="text" id="form32" class="form-control validate">
+                </div>
+
+                <div class="md-form text-secondary">
+                  <i class="fa fa-pencil prefix"></i>
+                  <label data-error="wrong" data-success="right" for="form8"> Your Message </label>
+                  <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                </div>
+              </div>
+
+              <div class="modal-footer d-flex justify-content-center">
+                  <button class="btn btn-primary"> Send <i class="fa fa-paper-plane ml-1"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </header>
     </section>  
 
   <!-- Main Content -->
     <!-- Section A -->
     <main role="main">
-      <section class="jumbotron text-center bg-white">
+      <section class="jumbotron text-md-center bg-white">
         <div class="container"> 
           <div class="row"> 
             <div class="col">
-                <div class="intro-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                    <h1> <span class="text-primary"> Hello. </span> <span class="text-secondary"> I'm Rico, a <strong> Product Designer </strong> from Las Vegas. </span> </h1> 
-                    <div class="p-3 mb-2"></div>
-                    <h2> <span class="text-secondary"> I enjoy creating thoughtful, engaging, and memorable <br> experiences expressed through user-centric design... </span> <span class="blinking-cursor text-primary"> | </span> </h2>
+                <div class="intro-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-md-center">
+                    <h3> <span class="text-primary"> Hello. </span> <span class="text-secondary"> I'm Rico, a <strong> Product Designer </strong> from Las Vegas. </span> </h3> 
+                    <div class="pt-3 mb-2"></div>
+                    <h4 class="text-md-center"> <span class="text-secondary"> I enjoy creating thoughtful, engaging, and memorable <br> experiences expressed through user-centric design... </span> <span class="blinking-cursor text-primary"> | </span> </h4>
                 </div>
             </div>
           </div>
@@ -65,45 +108,54 @@
       </section>  
     </main>   
 
-      <!-- Section B -->
+      <!-- Section B: Project Travel RN -->
     <section class="jumbotron bg-white border-top box-shadow">
-      <div class="p-3 mb-5"></div>
+      <div class="pt-3 mb-3"></div>
       <div class="container">   
         <div class="row justify-content-between">
-          <div class="col col-sm-6">
-            <h2 class="text-secondary"> Travel Resource Network </h2>
-            <h3 class="text-secondary"> Where will you go next? </h3>
+          <div class="col-sm-5">
+            <h4 class="text-secondary"> Travel Resource Network </h4>
+            <h5 class="text-secondary"> Where will you go next? </h5>
             <div class="p-0 mb-4"></div>
-            <p class="text-secondary"> A mobile application developed and designed for <br> nurses on the go. Travel RN is a dedicated search <br> engine for job listings specifically for the travel <br> nurse industry </p>
-            <div class="p-0 mb-4"></div>
-            <p class="text-secondary"> UX | UI Design  |  Brand Strategy  |  Market Research </p>
-            <div class="p-2 mb-4"></div>
-            <button type="button" class="btn btn-primary btn-lg"> View Project </button>
+            <p class="text-secondary"> A mobile application developed and designed for nurses on the go. Travel RN is a dedicated search engine for job listings specifically for the travel nurse industry. Recieve updated notifications regarding the assignments you want and apply instantly through the push of a button through your mobile phone. </p>
+            <div class="p-0 mb-4">
+              <p class="text-secondary"> UX | UI Design  |  Brand Strategy  |  Market Research </p>
+            </div>
+            <div class="pt-2 mb-2"></div>
+            <div class="trn button pb-5">
+              <button type="button" class="btn btn-primary btn-lg"> View Project </button>
+            </div>  
           </div>
-          <div class="col col-sm-6">
-            <img src="images/trn-image.svg" class="rounded float-right img-fluid" alt="picture of Travel RN Mobile App" /> 
+          <div class="col-sm-6">
+            <div class="trn image mr-md-3">
+              <img src="images/trn-image.svg" class="rounded float-right img-fluid" alt="picture of Travel RN Mobile App" /> 
+            </div>  
           </div>
         </div>
       </div>
     </section>    
 
-    <!-- Section C -->
+    <!-- Section C: Project ARCETYPE -->
     <section class="jumbotron bg-white border-top box-shadow">
-      <div class="p-3 mb-5"></div>
+      <div class="pt-3 mb-3"></div>
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col col-sm-6 col">
-            <img src="images/archetype-image.svg" class="rounded float-left img-fluid" alt="picture of laptop" />
+          <div class="col-sm-6">
+              <div class="archetype-content mr-md-2">
+                <img src="images/archetype-image.svg" class="rounded float-left img-fluid" alt="picture of laptop" />
+              </div>  
           </div>
-          <div class="col col-sm-5">
-            <h2 class="text-secondary"> ARCHETEYPE </h2>
-            <h3 class="text-secondary"> Your content. Your personality. </h3>
-            <div class="p-0 mb-4"></div>
-            <p class="text-secondary"> Developed as a SaaS product - storage compartment in the cloud. ARCHETYPE serves as a collaborative outlet for content and design architects to store ideas, work on projects, and share creations. </p>
-            <div class="p-0 mb-3"></div>
-            <p class="text-secondary"> UX | UI Design  |  Brand Strategy  |  Market Research </p>
-            <div class="p-2 mb-2"></div>
-            <button type="button" class="btn btn-primary btn-lg"> View Project </button>
+          <div class="col-sm-5">
+            <div class="archetype-content ml-md-2 pt-2 mb-2">
+              <h4 class="text-secondary"> ARCHETEYPE </h4>
+              <h5 class="text-secondary"> Your content. Your personality. </h5>
+              <div class="p-0 mb-4"></div>
+              <p class="text-secondary"> Developed as a SaaS product - storage compartment in the cloud. ARCHETYPE serves as a collaborative outlet for content and design architects to store ideas, work on projects, and share creations. </p>  
+              <div class="p-0 mb-3"></div>
+              <p class="text-secondary"> UX | UI Design  |  Brand Strategy  |  Market Research </p>
+              <div class="pt-2 mb-2"></div>
+              <button type="button" class="btn btn-primary btn-lg"> View Project </button>
+            </div>  
           </div>
         </div>
       </div>
@@ -111,24 +163,26 @@
 
     <!-- Section D: Footer -->
       <footer class="site-footer bg-white border-top box-shadow">
-        <div class="p-3 mb-5"></div>
+        <div class="pt-3 mb-3"></div>
         <div class="container">
           <div class="row">
-            <div class="col col-sm-6 mx-auto text-center">
-              <h3 class="text-secondary"> Let's Connect! </h3>
-              <p class="text-secondary"> Thanks for stopping by. Hopefully you enjoyed what you saw. If you would like to know more about my work, please drop me a line or let's chat over a cup of coffee! </p>
-              <a class="email icon" a href="#">
-                <i class="fa fa-envelope-o mr-2 mt-3 text-secondary" style="font-size: 48px;" aria-hidden="true"></i>
-              </a>
-              <a class="instagram icon" a href="#">
-                <i class="fa fa-instagram ml-2 text-secondary" style="font-size: 46px;" aria-hidden="true"></i>
-              </a>
-              <a class="github icon" a href="#">
-                <i class="fa fa-github ml-3 text-secondary" style="font-size: 46px;" aria-hidden="true"></i>
-              </a>
-              <a class="linkedin icon" a href="#">
-                <i class="fa fa-linkedin ml-3 text-secondary" style="font-size: 46px;" aria-hidden="true"></i>
-              </a> 
+            <div class="col-sm-6 mx-auto text-center">
+              <h4 class="text-secondary text-md-center"> Let's Connect! </h4>
+              <p class="text-secondary text-md-center"> Thanks for stopping by. Hopefully you enjoyed what you saw. If you would like to know more about my work, please drop me a line or let's chat over a cup of coffee! </p>
+              <div class="social-icons">
+                <a class="email icon" a href="#">
+                  <i class="fa fa-envelope-o mr-2 mt-3 text-secondary" aria-hidden="true"></i>
+                </a>
+                <a class="instagram icon" a href="#">
+                  <i class="fa fa-instagram ml-2 text-secondary" aria-hidden="true"></i>
+                </a>
+                <a class="github icon" a href="#">
+                  <i class="fa fa-github ml-3 text-secondary" aria-hidden="true"></i>
+                </a>
+                <a class="linkedin icon" a href="#">
+                  <i class="fa fa-linkedin ml-3 text-secondary" aria-hidden="true"></i>
+                </a> 
+              </div>  
               <p class="copy right info text-secondary mt-4">&copy Designed and Developed by Rico Pananganan</p>
             </div>
           </div>
