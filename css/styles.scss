@@ -23,6 +23,24 @@ $color-transparent-black: rgba(0, 0, 0, 0.5);
   .social-icons {
     font-size: 46px; 
   }
+
+  /*effect-underline*/
+.effect-underline:after {
+  content: '';
+  color: #3046C5; 
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
   
   
   /* Blinking Cursur */
@@ -81,4 +99,5 @@ $color-transparent-black: rgba(0, 0, 0, 0.5);
         color: #0275d8;
       }
     }
+
   
