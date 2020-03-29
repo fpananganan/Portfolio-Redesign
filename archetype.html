@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Endbuild -->
@@ -91,11 +92,17 @@
       </header>
     </section> 
 
-     <!-- Main Content -->
+    <!-- Main Content -->
     <!-- Section A: Personal Photo -->
     <main role="main">
       <section class="jumbotron img-md-center bg-white">
         <div class="container"> 
+
+          <!-- Back to Top Button -->
+          <button id="btnScrollToTop">
+            <i class="material-icons">arrow_upward</i>
+          </button>
+
           <div class="row"> 
             <div class="col">
               <img src="images/archetype-image.svg" class="img-fluid img-responsive mx-auto d-block" alt="picture of laptop" />
@@ -670,6 +677,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
   </body> 
 </html>     
